@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="10dp"
+    tools:context=".DocumentUpload">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/regCertBox"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:cardCornerRadius="10dp"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp"
+        android:layout_centerHorizontal="true"
+        app:cardBackgroundColor="@color/white"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/rcDocLogo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/document_100"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/regCertText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/rcDocLogo"
+                android:text="Registration Certificate"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/puCertBox"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:cardCornerRadius="10dp"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/regCertBox"
+        android:layout_marginHorizontal="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/pucDocLogo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/car_pollution_64"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/pucValidDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/pucDocLogo"
+                android:text="Pollution Certificate"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"/>
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:text="PROCEED"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"/>
+
+</RelativeLayout>

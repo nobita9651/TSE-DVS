@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@color/black"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/welcomeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:text="Welcome"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/dashboardUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_below="@+id/welcomeText"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingVertical="5dp"
+                android:text=" "
+                android:textSize="20sp"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/documentCardView"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                app:cardBackgroundColor="@color/white"
+                app:strokeColor="@color/black"
+                app:strokeWidth="2dp"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/documentLogo"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/car_document_100" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_toRightOf="@+id/documentLogo"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Documents"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                app:cardCornerRadius="10dp"
+                app:strokeColor="@color/black"
+                app:strokeWidth="2dp"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginTop="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/rupeeLogo"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/rupee"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:id="@+id/fineTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_toRightOf="@+id/rupeeLogo"
+                        android:text="Fines"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/fineAmountText"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/rupeeLogo"
+                        android:layout_below="@+id/fineTextView"
+                        android:text="Rs : 0 "
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:gravity="center"/>
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="50dp">
+
+                <ProgressBar
+                    android:id="@+id/dashboardProgress"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:indeterminate="true"
+                    android:layout_centerHorizontal="true"
+                    android:indeterminateTintMode="src_atop"
+                    android:indeterminateTint="@color/black"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

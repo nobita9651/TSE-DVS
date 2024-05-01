@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegCertUpload">
+
+    <TextView
+        android:id="@+id/regCertText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:text="Registration Certificate"
+        android:textColor="@color/black"
+        android:textSize="28sp" />
+
+    <ImageView
+        android:id="@+id/rcDocLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/regCertText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/document_100" />
+
+    <Button
+        android:id="@+id/rcSelectBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="70dp"
+        android:layout_below="@+id/rcDocLogo"
+        android:text="SELECT"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        android:background="@drawable/shapeprop"/>
+
+    <Button
+        android:id="@+id/rcUploadBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="70dp"
+        android:layout_below="@+id/rcSelectBtn"
+        android:text="UPLOAD"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        android:background="@drawable/shapeprop"/>
+
+</RelativeLayout>

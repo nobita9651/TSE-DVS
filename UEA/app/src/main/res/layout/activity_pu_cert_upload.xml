@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PuCertUpload">
+
+    <TextView
+        android:id="@+id/puCertText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:text="Pollution Certificate"
+        android:textColor="@color/black"
+        android:textSize="28sp" />
+
+    <ImageView
+        android:id="@+id/pucDocLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/car_pollution_64"
+        android:layout_below="@+id/puCertText"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/pucSelectBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="70dp"
+        android:layout_below="@+id/pucDocLogo"
+        android:text="SELECT"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        android:background="@drawable/shapeprop"/>
+
+    <Button
+        android:id="@+id/pucUploadBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="70dp"
+        android:layout_below="@+id/pucSelectBtn"
+        android:text="UPLOAD"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        android:background="@drawable/shapeprop"/>
+
+</RelativeLayout>

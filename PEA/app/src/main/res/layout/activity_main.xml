@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/black">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:text="Welcome"
+            android:textSize="40sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_semibold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginVertical="15dp"
+        android:layout_marginHorizontal="5dp">
+
+        <TextView
+            android:id="@+id/btDeviceNameText"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="@drawable/shapebox"
+            android:text="  Connected to :"
+            android:paddingLeft="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:fontFamily="@font/poppins_semibold"/>
+        <Button
+            android:id="@+id/btDeviceConnect"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:text="CONNECT"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@+id/btDeviceNameText"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp">
+
+        <TextView
+            android:id="@+id/regNumText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/black"
+            android:paddingHorizontal="10dp"
+            android:gravity="center_vertical"
+            android:layout_marginHorizontal="20dp"
+            android:text="Reg No : "
+            android:textSize="22sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="240dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/regCertCardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    app:cardCornerRadius="10dp"
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp"
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginHorizontal="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/rcDocLogo"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/document_100"
+                            android:layout_marginLeft="10dp"/>
+
+                        <TextView
+                            android:id="@+id/regCertText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/rcDocLogo"
+                            android:text="Registration Certificate"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/rcValidDate"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/rcDocLogo"
+                            android:layout_below="@+id/regCertText"
+                            android:text="Valid Upto : "
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:gravity="center"/>
+
+                    </RelativeLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/polCertCardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    app:cardCornerRadius="10dp"
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp"
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginHorizontal="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/pucDocLogo"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/car_pollution_64"
+                            android:layout_marginLeft="10dp"/>
+
+                        <TextView
+                            android:id="@+id/pucText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/pucDocLogo"
+                            android:text="Pollution Certificate"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/pucValidDate"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/pucDocLogo"
+                            android:layout_below="@+id/pucText"
+                            android:text="Valid Upto : "
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:gravity="center"/>
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/seatBeltCardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    app:cardCornerRadius="10dp"
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp"
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginHorizontal="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/seatBeltLogo"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/seatbelt_100"
+                            android:layout_marginLeft="10dp"/>
+
+                        <TextView
+                            android:id="@+id/seatBeltText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/seatBeltLogo"
+                            android:text="Seat Belt Status"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/seatBeltStatus"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/seatBeltLogo"
+                            android:layout_below="@+id/seatBeltText"
+                            android:text="Status : "
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:gravity="center"/>
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <ProgressBar
+            android:id="@+id/verifyProgress"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/verifyButton"
+            android:indeterminate="true"
+            android:indeterminateTintMode="src_atop"
+            android:indeterminateTint="@color/black"/>
+
+        <Button
+            android:id="@+id/verifyButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="VERIFY"
+            android:textSize="16sp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="10dp"/>
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
